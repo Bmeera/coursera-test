@@ -1,0 +1,96 @@
+	* {
+			box-sizing: border-box;
+		}
+		 h1 {
+			text-align: center;
+		    font-family: monospace;
+			font-size: 45px; 
+			margin-top: 50px;
+			color: #703810;
+		}
+		
+		.container {
+			margin-top: 80px;
+			margin-right: 20px;
+			margin-left: 20px;
+		}
+		.row {
+			width: 100%;
+		}
+
+		p{
+			margin-top: 45px;
+			font-size: 20px;
+		}
+
+		.section1, .section2, .section3{
+			position: relative;
+			margin: 20px;
+			padding: 10px;
+			border: 1px solid black;
+			color: white;
+			background-color: #703810;
+		}
+
+		/** Section title region **/
+		.section1 h2, .section2 h2, .section3 h2{
+			position: absolute;
+			width: 150px;
+			margin: 0px;
+			top: 0px;
+			right: 0px;
+			border: 1px solid black;
+			text-align: center;
+			font-size: 25px;
+
+		}
+		.section1 h2{
+			background-color: white;
+			color: grey;
+		}
+		.section2 h2{
+			background-color: #ff00ff;
+			color: green;
+		}
+		.section3 h2{
+			background-color: #000080;
+			color: #ccff66;
+
+		}
+		
+
+		/** For Desktop **/
+		@media ( min-width: 992px) {
+			.col-lg-4 {
+				float: left;
+
+			}
+			.col-lg-4 {
+				width: 33.33%;
+			}
+		}
+
+		/** For Tablet **/
+		@media (min-width: 768px) and (max-width: 991px) {
+			.col-md-12, .col-md-6{
+				float: left;
+			}
+			.col-md-6 {
+				width: 50%;
+			}
+			.col-md-12 {
+				width: 100%;
+			}
+		}
+
+		/** For Mobile **/
+		@media (max-width: 767px) {
+			.col-sm-12 {
+				float: left;
+			}
+			.col-sm-12 {
+				width: 100%;
+			}
+		}
+		
+		
